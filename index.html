@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: italic;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(circle, hotpink, aqua, #bc03ff);
+      }
+
+      h1 {
+        width: 100%;
+        height: 4rem;
+        color: purple;
+        font-size: 2.6rem;
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+      }
+
+      .login-container {
+        width: 100%;
+        max-width: 25rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+        padding: 1.3rem;
+        box-shadow: 6px 7px 3px #fff;
+        border-radius: 1.6rem;
+        border: 0.2rem solid aquamarine;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        transition-duration: 1.5s;
+      }
+
+      .login-container h2 {
+        margin-bottom: 1.3rem;
+      }
+
+      .login-form input {
+        width: 100%;
+        padding: 0.6rem;
+        margin: 0.6rem 0;
+
+        border: transparent;
+        border-radius: 0.9rem;
+        font-weight: bold;
+      }
+
+      .login-form button {
+        margin-top: 1rem;
+        width: 90%;
+        padding: 0.4rem;
+        background: #007bff;
+        border-color: #007bff;
+        border-radius: 2rem;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: 1s;
+      }
+      h1:hover {
+        color: red;
+        text-shadow: 0.2rem 0.1rem 0.1rem black;
+        text-decoration: underline;
+        transform: scaleX(1.5);
+      }
+
+      button:hover {
+        background: transparent;
+        transform: scaleX(1.5);
+        width: 60%;
+        border: 3px solid  red ;
+      }
+     
+      .login-container:hover {
+        box-shadow: 6px 7px 5px black;
+        background: radial-gradient(circle, hotpink, aqua, #bc03ff 100%);
+        border: transparent;
+      }
+      button a {
+        text-decoration: none;
+        color: #fff;
+      }
+      a:hover {
+        color: black;
+        font-weight: bold;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <h1>!! Login Page !!</h1>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form class="login-form" action="">
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">
+          <a
+            href="https://t3.ftcdn.net/jpg/02/01/11/36/360_F_201113648_pGYqkPmwbUhi0XK75K036h2xp9tnl7pQ.jpg"
+            >Login</a
+          >
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
